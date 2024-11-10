@@ -35,7 +35,7 @@ Future<void> deploy({List<String>? arguments}) async {
     // arguments = flutter build ios --release --flavor production
   }
 
-  print('Build the iOS .ipa');
+  print('Build the iOS .ipa, this may take a while');
   var result = await Process.run(
       'flutter', ['build', 'ipa', '--flavor', 'production'],
       workingDirectory: workingDirectory, runInShell: true);
